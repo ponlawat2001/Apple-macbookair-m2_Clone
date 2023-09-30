@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import Applelogo from "../assets/images/apple_logo.png";
 
 const navigation = [
   { name: "Dashboard", href: "#", current: true },
@@ -11,6 +12,17 @@ const navigation = [
 
 function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(" ");
+}
+
+export function Navbar() {
+  return (
+    <>
+      <Disclosure as="nav" className="bg-white flex flex-row">
+        <img src={Applelogo} alt="Applelogo" width="24px" />
+        <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">sdfsd</div>
+      </Disclosure>
+    </>
+  );
 }
 
 export default function Example() {
