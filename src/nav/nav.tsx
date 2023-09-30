@@ -17,9 +17,11 @@ function classNames(...classes: any[]) {
 export function Navbar() {
   return (
     <>
-      <Disclosure as="nav" className="bg-white flex flex-row">
-        <img src={Applelogo} alt="Applelogo" width="24px" />
-        <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">sdfsd</div>
+      <Disclosure as="nav" className="bg-white ">
+        <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 flex flex-row justify-center">
+          <img src={Applelogo} alt="Applelogo" width="24px" />
+          sdfsd
+        </div>
       </Disclosure>
     </>
   );
